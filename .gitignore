@@ -1,0 +1,8 @@
+*.exe
+*.o
+*.out
+*.txt
+Temp/
+.vscode
+.idea
+report
