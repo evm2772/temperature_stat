@@ -8,13 +8,18 @@
 
 int main(int argc, char *argv[])
 {
+    if (argc == 1) 
+    {
+        help();
+        return 0;
+    }
     int opt = 0;
     char cvs_path[256];
     uint8_t m = 0;
     int h = 0;
     // Parse options
     while ((opt = getopt(argc, argv,"hf:m:")) != -1)
-    {
+    {   
         switch (opt)
         {
             case 'h': 
@@ -32,7 +37,7 @@ int main(int argc, char *argv[])
                 }
                 break;
             case '?': 
-                printf("Unknown option!\n");
+                printf("Unknown option. Type 'report -h' for help..\n");
                 return 1;
         }
     }
