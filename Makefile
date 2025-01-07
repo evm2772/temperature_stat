@@ -14,5 +14,5 @@ temp_api.o: temp_api.c
 
 clean:
 	rm *.o
-	rm report
+	rm report.exe
 	
