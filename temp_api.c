@@ -6,7 +6,7 @@ void print_stat(Stat_t stat, int month_num)
 {
     if (stat.records_number > 0)
     {
-        printf("%10d | %10ld | %10d | %10d | %10d | %10.2f ",
+        printf("%10d | %10lld | %10d | %10d | %10d | %10.2f ",
                 month_num,
                 stat.records_number,   
                 stat.year,
@@ -16,7 +16,7 @@ void print_stat(Stat_t stat, int month_num)
                 );
     }
     else
-        printf("%10d | %10ld | %10s | %10s | %10s | %10s ",
+        printf("%10d | %10lld | %10s | %10s | %10s | %10s ",
                 month_num,
                 stat.records_number,   
                 "-",
